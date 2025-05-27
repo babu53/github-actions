@@ -3,7 +3,7 @@ name: Create Folder Example
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   create-folder:
