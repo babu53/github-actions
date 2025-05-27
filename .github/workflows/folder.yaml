@@ -22,9 +22,11 @@ jobs:
         run: |
           echo "Current working directory is:"
           pwd
-      - name: create another folder
-        run: |
-         mkdir -p /home/runner/work/github-actions/github-actions/demo/demo1
+      # - name: create another folder
+      #   run: |
+      #    mkdir -p /home/runner/work/github-actions/github-actions/demo/demo1
 
       - name: Verify folder
-        run: ls -la
+        run: |
+          ls -la
+          ls -la /home/runner/work/github-actions/github-actions/demo/
