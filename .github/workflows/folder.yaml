@@ -24,6 +24,6 @@ jobs:
           pwd
       - name: create another folder
         run: |
-         mkdir /home/runner/work/github-actions/github-actions/test
+         mkdir /home/runner/work/github-actions/github-actions/demo/demo1
       - name: Verify folder
         run: ls -la
