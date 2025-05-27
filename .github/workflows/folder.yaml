@@ -19,3 +19,7 @@ jobs:
 
       - name: Verify folder
         run: ls -la
+      - name: Print current working directory
+        run: |
+          echo "Current working directory is:"
+          pwd
