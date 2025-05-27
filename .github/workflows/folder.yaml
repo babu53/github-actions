@@ -1,0 +1,21 @@
+name: Create Folder Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create folder
+        run: |
+          mkdir -p my-new-folder
+          echo "Folder created!"
+
+      - name: Verify folder
+        run: ls -la
