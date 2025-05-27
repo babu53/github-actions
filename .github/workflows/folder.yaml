@@ -28,10 +28,10 @@ jobs:
          mkdir -p $GITHUB_WORKSPACE/test/demo1
       - name: copy files to demo1
         run: |
-          cp /home/runner/work/github-actions/github-actions/README.md /home/runner/work/github-actions/github-actions/demo/demo1
+          cp /home/runner/work/github-actions/github-actions/README.md /home/runner/work/github-actions/github-actions/test/demo1
 
       - name: Verify folder
         run: |
           ls -la
           ls -la /home/runner/work/github-actions/github-actions/test/
-          ls -la /home/runner/work/github-actions/github-actions/demo/demo1
+          ls -la /home/runner/work/github-actions/github-actions/test/demo1
