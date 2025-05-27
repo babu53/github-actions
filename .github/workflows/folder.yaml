@@ -25,8 +25,12 @@ jobs:
       - name: create another folder
         run: |
          mkdir -p /home/runner/work/github-actions/github-actions/demo/demo1
+      - name: copy files to demo1
+        run: |
+          cp /home/runner/work/github-actions/github-actions/README.md /home/runner/work/github-actions/github-actions/demo/demo1
 
       - name: Verify folder
         run: |
           ls -la
           ls -la /home/runner/work/github-actions/github-actions/demo/
+          ls -la /home/runner/work/github-actions/github-actions/demo/demo1
