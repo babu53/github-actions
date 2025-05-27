@@ -17,9 +17,13 @@ jobs:
           mkdir -p my-new-folder
           echo "Folder created!"
 
-      - name: Verify folder
-        run: ls -la
+      
       - name: Print current working directory
         run: |
           echo "Current working directory is:"
           pwd
+      - name: create another folder
+        run: |
+         mkdir /home/runner/work/github-actions/github-actions/test
+      - name: Verify folder
+        run: ls -la
