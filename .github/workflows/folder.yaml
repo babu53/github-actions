@@ -24,7 +24,7 @@ jobs:
           pwd
       - name: create another folder
         run: |
-         mkdir -p /home/runner/work/github-actions/github-actions/demo/demo1
+         mkdir -p ${pwd}/demo/demo1
       - name: copy files to demo1
         run: |
           cp /home/runner/work/github-actions/github-actions/README.md /home/runner/work/github-actions/github-actions/demo/demo1
